@@ -1,0 +1,12 @@
+{
+  "name": "newsletter",
+  "version": "0.1.0",
+  "devDependencies": {
+    "grunt-contrib-uglify": "~0.6.0",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-contrib-sass": "~0.8.1",
+    "grunt-contrib-imagemin": "~0.9.1",
+    "nodemon": "~1.2.1"
+  },
+  "debug": true
+}
