@@ -1,0 +1,146 @@
+$include-html-global-classes: true;
+
+@import "foundation/components/global";
+
+$include-html-global-classes: false;
+
+@import "foundation.scss";
+
+
+@import "theme";
+
+
+html{
+	overflow-x: hidden;
+}
+
+label.inline-radio{
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.form-container{
+	margin-top: 40px!important;
+	
+	form{
+		border-radius: 5px;
+		background: $formBG;
+		position: relative;
+
+		> :first-child{
+			background: darken($formBG, 5);
+			min-width: 100%;
+			text-align: center;
+			margin-left: -15px;
+			margin-right: -15px;
+			border-top-left-radius: 5px;
+			border-top-right-radius: 5px;
+		}
+		input[type="submit"]{
+			padding: 7px;
+			border-radius: 5px;
+			background: $submitBG;
+			color: white;
+			font-size: 20px;
+			border: none!important;
+			margin: 15px 0px;
+			min-width: 100%;
+			&:hover{
+				background: lighten($submitBG, 3)
+			}
+			&:active{
+				background: lighten($submitBG, 5)
+			}
+		}
+	}
+}
+hr {
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	height: 0;
+	border: solid #DDDDDD;
+	border-width: 1px 0 0;
+	clear: both;
+	margin: 1.25rem 0 1.1875rem;
+}
+
+.langs{
+
+	.wrapper{
+		position: relative;
+
+		div{
+			text-align: center;
+			font-size: 18px;
+			cursor: pointer;
+			> :last-child{
+				display: none;
+			}
+		}
+
+		>:nth-child(1){
+			background: blue;
+		}
+		>:nth-child(2){
+			background: green;
+		}
+		>:nth-child(3){
+			background: yellow;
+		}
+	} 
+	@media #{$large-only}{
+		position: fixed;
+		top: 20%;
+		right: 0px;
+
+		.wrapper{
+			div{
+				width: 45px;
+				height: 45px;
+				display: block;
+				transition: 1s;
+				padding-top: 9px;
+				position: absolute;
+				right: 0px;
+
+				&:hover{
+					right: 0px;
+					width: 120px;
+					> :last-child{
+						display: block;
+					}
+					> :first-child{
+						display: none;
+					}
+				}
+			}
+			>:nth-child(1){
+				top: 0px;
+				span{
+					margin-left: -3px;
+				}
+			}
+			>:nth-child(2){
+				top: 45px;
+				span{
+					margin-left: -3px;
+				}
+			}
+			>:nth-child(3){
+				top: 90px;
+			}
+		}
+		
+	}
+}
+@media #{$large-only}{
+	.detailstext{
+		margin-right: 20px;
+	}
+}
+
+.logo{
+	min-width: 100%;
+	overflow-x: hidden;
+	background-size: cover!important;
+}

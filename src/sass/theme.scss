@@ -1,0 +1,44 @@
+//THE BACKGROUND COLOR OF THE FORM
+$formBG: rgba(245, 233, 11, 0.7);
+
+//FORM TEXT COLOR
+$formColor: black;
+
+//THE SUBMIT BUTTON BACKGROUND COLOR
+$submitBG: lightgreen;
+
+//THE SUBMIT BUTTON TEXT COLOR
+$submitColor: white;
+
+//THE LANGAUGE BUTTONS' BACKGROUND COLOR
+$lang1Background: blue;
+$lang2Background: green;
+$lang3Background: yellow;
+
+.logo{
+	//WHEN BIG SCREEN
+	@media #{$large-only}{
+
+		//GET EXTERNAL PICTURE
+		background: url("http://www.jaybeeprinters.com/img/background/ae.jpg");
+
+		//SPECIFY FIXED HEIGHT FOR BROWSERS WHO DOESN'T SUPPORT CALC()
+		height: 85px;
+
+		//SPECIFY DYNAMIC HEIGHT OF THE PICTURE
+		//calc(100vw(full page width) / (yourimg.width / yourimg.height))
+		height: calc(100vw / 1.65);
+	}
+	@media #{$medium-only}{
+
+		//GET INTERNAL PICTURE FROM public/img/, current directory is public/css
+		background: url("../img/ribbon-banner.jpg");
+		height: 110px;
+		height: calc(100vw / 2);
+	}
+	@media #{$small-only}{
+		background: url("http://www.logomoose.com/wp-content/uploads/2011/10/platform.jpg");	
+		height: 150px;
+		height: calc(100vw / 2);
+	}
+}

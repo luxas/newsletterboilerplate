@@ -1,0 +1,22 @@
+{
+	"header": "Hej på er!",
+	"details": "Nåt svenskt ord... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+	"formHeader": "Ja, jag vill ha nyheter om...",
+	"firstName": "Förnamn",
+	"lastName": "Efternamn",
+	"email": "E-post address",
+	"gender": "Kön",
+	"male": "Man",
+	"female": "Kvinna",
+	"terms": "Ja, jag accepterar avtalen",
+	"submit": "Skicka",
+	"firstNameValidation": "Fältet är obligatoriskt",
+	"lastNameValidation": "Fältet är obligatoriskt",
+	"emailValidation": "Fyll i en email-address",
+	"alright": "E du okej?",
+	"yes": "Jaaa!",
+	"no": "Neee...",
+	"maybe": "Kan hända :)",
+	"likesPHP": "Gillar du php?",
+	"comments": "Ge lite feedback!"
+}
